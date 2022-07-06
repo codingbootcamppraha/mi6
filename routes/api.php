@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/people-of-interest',[App\Http\Controllers\Api\PersonController::class, 'index']);
+Route::get('/statuses',[App\Http\Controllers\Api\StatusController::class, 'index']);
+
