@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{{ mix('/css/style.css') }}">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>
     <div class="nav-panel">
         <img class="seal" src="/images/mi6-seal.png" alt="MI6 Seal">
         <p> <a href="/"> Home </a></p>
-        <p> <a href="/people-of-interest"> People of Interest </a></p>
+        <p>
+            <a href="/people-of-interest"> People of Interest </a>
+        </p>
+        <p>
+            <a href="/missions">Missions</a>
+        </p>
         <div class="nav-control">
             <button><</button>
         </div>

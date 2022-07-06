@@ -37,6 +37,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 1em 3em;
+
+    a {
+        color: white;
+    }
 
     #root {
         height: 100%;

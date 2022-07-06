@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const mix = require('laravel-mix');
 
- 
+
 
 /*
 
@@ -24,7 +24,7 @@ const mix = require('laravel-mix');
 
  */
 
- 
+
 
 if (!mix.inProduction()) {
 
@@ -42,7 +42,7 @@ if (!mix.inProduction()) {
 
 }
 
- 
+
 
 mix
 
@@ -54,7 +54,7 @@ mix
 
     })
 
- 
+
 
     // open and serve with browsersync
 
@@ -69,4 +69,5 @@ mix
     .version();
 
 mix.sass('resources/css/style.scss', 'public/css')
-    .js('resources/js/people-of-interest.js', 'public/js').react();
+    .js('resources/js/people-of-interest.js', 'public/js').react()
+    .js('resources/js/missions.js', 'public/js').react();
